@@ -15,7 +15,23 @@
 <hr>
 <button onclick="window.location.href='file:///mnt/sdcard/Downloads'">location.href</button>
 <hr>
-<iframe src="https://www.google.com"></iframe>
-<iframe src="file:///mnt/sdcard/Downloads"></iframe>
+<iframe name="if1" src="https://www.google.com"></iframe>
+<iframe name="if2" src="file:///mnt/sdcard/Downloads"></iframe>
+<hr>
+<div>for desktop</div>
+<a href="file://localhost/c:/">file</a><br>
+<a href="file://localhost/c:/" target="_blank">file _blank</a><br>
+<a href="file://localhost/c:/" target="if2">file target=if2</a><br>
+<hr>
+<form action="file://localhost/c:/" method="get">
+<input type="submit" value="Submit">
+<form>
+<form action="file://localhost/c:/" method="get" target="_blank">
+<input type="submit" value="submit _blank">
+<form>
+<form action="file://localhost/c:/" method="get" target="if2">
+<input type="submit" value="submit target=if2">
+<form>
+
 </body>
 </html>
